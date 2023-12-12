@@ -9,7 +9,7 @@ def grab_image(ip):
     # Initialize 
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     host = ip
-    port = 12345
+    port = 50001
 
     # Connect to server
     client_socket.connect((host, port))
