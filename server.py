@@ -25,7 +25,7 @@ server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Get local machine name and port
 # May need some modifications for use on LAN
 host = '127.0.0.1'
-port = 12345
+port = 50001
 
 # Bind to port
 server_socket.bind((host, port))
