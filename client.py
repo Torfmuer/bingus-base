@@ -18,6 +18,9 @@ def grab_image(ip):
     print(client_socket.recv(1024).decode('utf-8'))
     print('input image option: ')
     img_op = input()
+    while img_op not in ["bingus","drip","fullbingus","splorngus","suit"]:
+        print("~ Please make sure your choice is valid! ~")
+        img_op = input()
     client_socket.send(img_op.encode('utf-8'))
     
     # Receive image size first
